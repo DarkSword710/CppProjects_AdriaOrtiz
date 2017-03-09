@@ -4,23 +4,29 @@
 class DynArray
 {
 public:
+
 	// constructors
+
 	DynArray(void);													// constructs the class by default
 	DynArray(size_t size);												// creates the array with a defined size
 	DynArray(size_t size, const int &value);							// creates and initializes the elements of the array with a value
 	DynArray(int *arr, size_t size);									// initializes each element from an external array
 
-																		// destructor
+	// destructor
+
 	~DynArray(void);													// deletes the memory in the Heap
 
-																		// assignment operators
+	// assignment operators
+
 	DynArray& operator= (const DynArray &x);							// copies all the attributes from x to this object
 
-																		// iterator methods
+	// iterator methods
+
 	int* begin(void) const;											// returns an iterator to the first element
 	int* end(void) const;											// returns an iterator to the last element
 
-																	// capacity methods
+	// capacity methods
+
 	void resize(size_t n);									// resizes the array so that it contains n elements
 	void reserve(size_t n);									// requests the capacity to be at least enough to contain n elements
 	void shrink(void);										// requests the array to reduce its capacity to fit its size
@@ -29,14 +35,16 @@ public:
 	size_t size(void) const;									// returns the number of elements in the array
 	static size_t maxSize(void);										// returns the maximum number of elements that the array can hold
 
-																		// element access methods
+	// element access methods
+
 	int& operator[]	(size_t n) const;									// returns a reference to the element at position n in the array
 	int& at(size_t n) const;									// returns a reference to the element at position n in the array
 	int& front(void)     const;									// returns a reference to the first element in the array
 	int& back(void)     const;									// returns a reference to the last element in the array
 	int* data(void)     const;									// returns a direct pointer to the memory array that stores the elements
 
-																// modifiers methods
+	// modifiers methods
+
 	void assign(size_t n, const int& val);								// assigns and replaces the current contents modifying its size accordingly
 	void push(const int &val);										// adds a new element at the end of the array, after its current last element
 	void pop(void);													// removes the last element effectively reducing the array size by one
