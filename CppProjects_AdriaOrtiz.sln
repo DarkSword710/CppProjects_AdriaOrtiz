@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TheWalkingDead", "TheWalkin
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DynArray", "DynArray\DynArray.vcxproj", "{61A3246A-6F28-4691-81FB-238EB72C3BF4}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Vector", "Vector\Vector.vcxproj", "{6F8DD50C-C93C-4C5A-A748-5762B3EF415D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -51,6 +53,14 @@ Global
 		{61A3246A-6F28-4691-81FB-238EB72C3BF4}.Release|x64.Build.0 = Release|x64
 		{61A3246A-6F28-4691-81FB-238EB72C3BF4}.Release|x86.ActiveCfg = Release|Win32
 		{61A3246A-6F28-4691-81FB-238EB72C3BF4}.Release|x86.Build.0 = Release|Win32
+		{6F8DD50C-C93C-4C5A-A748-5762B3EF415D}.Debug|x64.ActiveCfg = Debug|x64
+		{6F8DD50C-C93C-4C5A-A748-5762B3EF415D}.Debug|x64.Build.0 = Debug|x64
+		{6F8DD50C-C93C-4C5A-A748-5762B3EF415D}.Debug|x86.ActiveCfg = Debug|Win32
+		{6F8DD50C-C93C-4C5A-A748-5762B3EF415D}.Debug|x86.Build.0 = Debug|Win32
+		{6F8DD50C-C93C-4C5A-A748-5762B3EF415D}.Release|x64.ActiveCfg = Release|x64
+		{6F8DD50C-C93C-4C5A-A748-5762B3EF415D}.Release|x64.Build.0 = Release|x64
+		{6F8DD50C-C93C-4C5A-A748-5762B3EF415D}.Release|x86.ActiveCfg = Release|Win32
+		{6F8DD50C-C93C-4C5A-A748-5762B3EF415D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
