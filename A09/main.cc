@@ -2,6 +2,7 @@
 #include <string>
 #include <stack>
 #include <queue>
+#include "myStack.h"
 
 std::stack<int> superMerge(std::stack<int> stack1, std::stack<int> stack2) {
 
