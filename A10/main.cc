@@ -2,6 +2,7 @@
 #include <queue>
 #include <unordered_set>
 #include <iostream>
+#include "myList.hh"
 
 std::list<int> superMerge(std::list<int> list1, std::list<int> list2) {
 	std::priority_queue<int> aux (list1.begin(), list1.end());
@@ -105,7 +106,18 @@ void main() {
 	}*/
 
 	//palindrome
-	std::list<int> list({ 8, 6, 5, 6, 8 });
-	std::cout << palindrome(list);
+	/*std::list<int> list({ 8, 6, 5, 6, 8 });
+	std::cout << palindrome(list);*/
 
+	myList one;
+	one.push_back(1);
+	one.push_back(2);
+	one.push_back(3);
+
+	myList two(one);
+
+	while (!two.isEmpty()) {
+		std::cout << two.front() << std::endl;
+		two.pop_front();
+	}
 }
